@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Agent Access</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <div id="login-container" class="container">
+        <h2>Enter Correct Code to access secret information</h2>
+        <form id="login-form">
+            <input type="text" id="username" placeholder="Username" required pattern="^[a-zA-Z0-9_]{5,12}$" title="Username must be 5-12 characters long, alphanumeric only (underscores allowed)">
+            <input type="password" id="password" placeholder="Password" required pattern="^[a-zA-Z0-9_]{5,12}$" title="Password must be 5-12 characters long, alphanumeric only (underscores allowed)">
+            <button type="submit" id="login-btn">Login</button>
+        </form>
+    </div>
+    <div id="command-line" class="container hidden">
+        <div id="command-line-interface" class="command-line-interface">
+            <p class="fae-code">Inputting secure access code...</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
